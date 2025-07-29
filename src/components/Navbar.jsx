@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="bg-dark text-white py-6 px-6 md:px-10 flex items-center justify-between relative">
+      <header className="bg-black text-white py-6 px-6 md:px-10 flex items-center justify-between relative">
         <div className="text-2xl font-semibold">
           <span className="text-primary">*</span>fff
         </div>
