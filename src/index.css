@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@theme {
+  --color-primary: #ff6b35;
+  --color-dark: #1a1a1a;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+.hero-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 91px;
+  line-height: 109px;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  letter-spacing: -0.01em;
+}
+
+.hero-text-orange {
+  color: #ff6b35;
+}
+
+/* Test class for Poppins font */
+.test-poppins {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
