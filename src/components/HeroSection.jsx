@@ -45,8 +45,8 @@ const HeroSection = () => {
               {/* Dashboard Image */}
               <div className="relative z-10 rounded-xl overflow-hidden">
                 <video 
-                  src="/video/digital-product-design-agency.mp4" 
-                  className="w-full h-[40vh] sm:h-[60vh] md:h-[80vh] object-cover rounded-xl" 
+                  src="/video/Novawatches.mp4" 
+                  className="w-full h-[40vh] sm:h-[60vh] md:h-[80vh] object-cover rounded-xl border-2 border-white shadow-lg" 
                   autoPlay 
                   loop 
                   muted
