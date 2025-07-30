@@ -77,7 +77,7 @@ const Footer = () => {
                     className="text-[16px] xs:text-[18px] sm:text-[20px] text-white hover:text-orange-500 transition-colors duration-300" 
                     style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}
                   >
-                    hello@fff.agency
+                    info@frenchfryfeatures.com
                   </a>
                 </motion.div>
 
@@ -95,7 +95,7 @@ const Footer = () => {
                     className="text-[16px] xs:text-[18px] sm:text-[20px] text-white hover:text-orange-500 transition-colors duration-300" 
                     style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}
                   >
-                    +1 (555) 123-4567
+                    +91-8799111110
                   </a>
                 </motion.div>
               </div>

@@ -2,31 +2,31 @@ import React, { useRef } from "react";
 
 const cases = [
   {
-    image: "/public/featured/shaga.png", // Replace with your actual image path
-    tags: ["#WEBSITE DESIGN", "#WEBSITE DEVELOPMENT"],
-    title: "Shaga Odyssey – an award-winning web3 gamepad platform",
-    buttons: ["SHAGA.XYZ", "USA"],
-    tech: "Webflow",
+    video: "/video/AuctoGames.mp4",
+    tags: ["#PRODUCT DESIGN", "#WEBFLOW", "#GAMIFICATION"],
+    title: "Aucto Games",
+    buttons: ["AUCTO.GG", "India"],
+    tech: "FullStack, Website, Web Application Figma",
     timeline: "5 months",
-    results: ["+40% increase in user engagement", "3x faster platform navigation"],
+    results: ["+40% user engagement", "3× faster platform navigation", "Community adoption in 3 weeks"],
   },
   {
-    image: "/public/featured/klickex.png",
-    tags: ["#UX AUDIT", "#PRODUCT REDESIGN", "#WEB DEVELOPMENT"],
-    title: "KlickEx – frictionless cross-border payments for the Pacific Island communities",
-    buttons: ["NOMUPAY", "NEW ZEALAND"],
-    tech: "Next.js, TypeScript, React Redux",
-    timeline: "6 months",
-    results: ["+35% 'Add Money' conversion rate", "+30% 'Money Transfer' completion rate"],
+    video: "/video/CurtainsAndMore12.mp4",
+    tags: ["#ECOMMERCE UX", "#UI REVAMP", "#NEXT.JS"],
+    title: "Curtains And More",
+    buttons: ["CURTAINSANDMORE.CO.UK", "UK"],
+    tech: "FullStack, Figma, Consulting",
+    timeline: "1 month",
+    results: ["+35% conversion on fabric swatches", "Reduced bounce rate by 28%", "Mobile load time under 1.5s"],
   },
   {
-    image: "/public/featured/isora.png",
-    tags: ["#UX AUDIT", "#PRODUCT REDESIGN", "#WEB DEVELOPMENT", "#TEAM EXTENTION"],
-    title: "Isora – optimizing governance, risk & compliance for top institutions",
-    buttons: ["SALTYCLOUD", "TEXAS, USA"],
-    tech: "React, Python, AWS",
-    timeline: "12 months, ongoing",
-    results: ["2x faster user workflows", "50% shorter time-to-market", "Nominated for UX Design Award 2024"],
+    video: "/video/BYOC.mp4",
+    tags: ["#WEB3 PLATFORM", "#DASHBOARD UX", "#TEAM EXTENSION"],
+    title: "BYOC – Build Your Own Content",
+    buttons: ["BYOC.CO", "USA"],
+    tech: "FullStack, Figma, Admin Dashboard",
+    timeline: "Ongoing (4+ months)",
+    results: ["2× faster creator onboarding", "50% reduced time-to-market", "Introduced real-time wallet insights"],
   },
 ];
 
@@ -41,16 +41,19 @@ const FeaturedCaseStickySection = () => {
             className={`bg-white top-2 xs:top-4 sm:top-8 md:top-12 lg:top-16 xl:top-24 px-4 xs:px-6 sm:px-12 py-8 xs:py-10 sm:py-12 flex flex-col lg:flex-row gap-8 xs:gap-12 mb-16 sm:mb-24 border-t border-gray-200 transition-all duration-300 ${idx !== 0 ? "mt-24 sm:mt-48 z-20" : "z-10"}`}
             style={{ minHeight: "400px", position: "sticky" }}
           >
-            {/* Left image sticky */}
+            {/* Left video sticky */}
             <div
               className="w-full lg:w-1/2 sticky top-8 xs:top-12 sm:top-16 h-[40vh] xs:h-[60vh] sm:h-[80vh] flex items-center justify-center mb-8 lg:mb-0"
               style={{ zIndex: 10 }}
             >
-              <img
-                src={c.image}
-                alt={c.title}
-                className="rounded-2xl object-cover w-full h-full shadow-xl"
+              <video
+                src={c.video}
+                className="rounded-2xl object-cover w-full h-full shadow-xl border-2 border-black"
                 style={{ maxHeight: "500px", background: "#000" }}
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </div>
             {/* Right details scrollable */}

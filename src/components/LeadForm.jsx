@@ -162,7 +162,7 @@ const LeadForm = () => {
                   EMAIL
                 </h3>
                 <p className="text-[18px] xs:text-[22px] sm:text-[25px] text-black font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
-                  hello@fff.agency
+                  info@frenchfryfeatures.com
                 </p>
               </motion.div>
 
@@ -177,7 +177,7 @@ const LeadForm = () => {
                   PHONE
                 </h3>
                 <p className="text-[18px] xs:text-[22px] sm:text-[25px] text-black font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
-                  +1 (555) 123-4567
+                  +91-8799111110
                 </p>
               </motion.div>
 
@@ -192,9 +192,9 @@ const LeadForm = () => {
                   OFFICE
                 </h3>
                 <p className="text-[18px] xs:text-[22px] sm:text-[25px] text-black font-light leading-tight" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
-                  123 Innovation Street
+                  Master's Union, CyberPark
                   <br />
-                  San Francisco, CA 94105
+                  Gurgaon
                 </p>
               </motion.div>
 
