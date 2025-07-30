@@ -52,21 +52,21 @@ const cards = [
 ];
 
 const FeaturedClients = () => (
-  <section className="bg-white py-20">
+  <section className="bg-white py-10 sm:py-20 overflow-hidden">
     <div className="">
-      <div className="mb-12">
-        <h2 className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-4 px-16">
+      <div className="mb-8 sm:mb-12">
+        <h2 className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-2 sm:mb-4 px-4 sm:px-16">
           PRODUCT DESIGN AND DEVELOPMENT AGENCY
         </h2>
-        <h3 className="text-[64px] font-bold text-black mb-8 px-16">
+        <h3 className="text-[32px] xs:text-[44px] sm:text-[64px] font-bold text-black mb-6 sm:mb-8 px-4 sm:px-16">
           Our <span className="text-orange-500 font-bold">featured</span> client wins
         </h3>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+      <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4">
         {cards.map((card, idx) => (
           <div
             key={idx}
-            className="group bg-white border border-gray-200 flex items-center justify-center min-h-[220px] h-[220px] cursor-pointer relative overflow-hidden transition-all duration-300 ease-out hover:shadow-xl "
+            className="group bg-white border border-gray-200 flex items-center justify-center min-h-[160px] xs:min-h-[180px] sm:min-h-[220px] h-[160px] xs:h-[180px] sm:h-[220px] cursor-pointer relative overflow-hidden transition-all duration-300 ease-out hover:shadow-xl "
             style={{ boxShadow: "0 2px 16px 0 rgba(0,0,0,0.04)" }}
           >
             {/* Default: Centered logo (and icon for SHAGA) */}
@@ -83,7 +83,7 @@ const FeaturedClients = () => (
                   <span className="text-black font-bold text-xl tracking-wide">SHAGA</span>
                 </div>
               ) : (
-                <span className="flex items-center gap-2 text-black font-bold text-xl tracking-wide transition-transform duration-300 ease-out group-hover:scale-110">
+                <span className="flex items-center gap-2 text-black font-bold text-[16px] xs:text-xl tracking-wide transition-transform duration-300 ease-out group-hover:scale-110">
                   {card.logo && <span className="text-2xl">{card.logo}</span>}
                   {card.title}
                 </span>
@@ -92,14 +92,14 @@ const FeaturedClients = () => (
             
             {/* On hover: show details in inner black div */}
             <div className="absolute inset-0 flex items-center justify-center w-full h-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-              <div className="bg-black rounded-2xl w-full h-full flex flex-col px-8 py-8 justify-center items-center transition-all duration-500 ease-out transform scale-90 group-hover:scale-100 shadow-2xl">
-                <span className="text-white font-bold text-xl mb-2 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out delay-100">{card.title}</span>
-                <span className="text-gray-300 text-[15px] mb-4 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out delay-150">{card.description}</span>
-                <div className="flex gap-2 mt-auto transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out delay-200">
+              <div className="bg-black rounded-2xl w-full h-full flex flex-col px-4 xs:px-6 sm:px-8 py-4 xs:py-6 sm:py-8 justify-center items-center transition-all duration-500 ease-out transform scale-90 group-hover:scale-100 shadow-2xl">
+                <span className="text-white font-bold text-[15px] xs:text-xl mb-2 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out delay-100">{card.title}</span>
+                <span className="text-gray-300 text-[13px] xs:text-[15px] mb-4 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out delay-150">{card.description}</span>
+                <div className="flex gap-1 xs:gap-2 mt-auto transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out delay-200">
                   {card.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="bg-gray-800 text-white text-xs font-semibold px-3 py-1 rounded transition-all duration-200 ease-out hover:bg-orange-500 transform hover:scale-105"
+                      className="bg-gray-800 text-white text-[11px] xs:text-xs font-semibold px-2 xs:px-3 py-1 rounded transition-all duration-200 ease-out hover:bg-orange-500 transform hover:scale-105"
                       style={{
                         transitionDelay: `${200 + i * 50}ms`
                       }}

@@ -129,28 +129,28 @@ const LeadForm = () => {
   };
 
   return (
-    <section className="bg-white py-20">
-      <div className="px-8">
-        <div className="mb-16">
-          <span className="tracking-widest text-gray-500 font-bold text-[18px]">GET IN TOUCH</span>
+    <section className="bg-white py-10 sm:py-20 overflow-hidden">
+      <div className="px-4 sm:px-8">
+        <div className="mb-8 sm:mb-16">
+          <span className="tracking-widest text-gray-500 font-bold text-[14px] sm:text-[18px]">GET IN TOUCH</span>
         </div>
         
-        <div className="flex gap-24">
+        <div className="flex flex-col lg:flex-row gap-8 sm:gap-16 lg:gap-24">
           {/* Left Side - Contact Details */}
           <motion.div 
-            className="w-1/2"
+            className="w-full lg:w-1/2 mb-10 lg:mb-0"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-bold text-black text-[70px] leading-tight mb-12" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
+            <h2 className="font-bold text-black text-[32px] xs:text-[44px] sm:text-[60px] lg:text-[70px] leading-tight mb-6 sm:mb-12" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
               Let's discuss your
               <br />
               <span className="text-orange-500">next project</span>
             </h2>
             
-            <div className="space-y-12">
+            <div className="space-y-6 sm:space-y-12">
               <motion.div 
                 className="border-l-2 border-gray-200 pl-8"
                 initial={{ opacity: 0, y: 20 }}
@@ -158,10 +158,10 @@ const LeadForm = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <h3 className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                <h3 className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-2 sm:mb-4">
                   EMAIL
                 </h3>
-                <p className="text-[25px] text-black font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
+                <p className="text-[18px] xs:text-[22px] sm:text-[25px] text-black font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
                   hello@fff.agency
                 </p>
               </motion.div>
@@ -173,10 +173,10 @@ const LeadForm = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <h3 className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                <h3 className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-2 sm:mb-4">
                   PHONE
                 </h3>
-                <p className="text-[25px] text-black font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
+                <p className="text-[18px] xs:text-[22px] sm:text-[25px] text-black font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
                   +1 (555) 123-4567
                 </p>
               </motion.div>
@@ -188,10 +188,10 @@ const LeadForm = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <h3 className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                <h3 className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-2 sm:mb-4">
                   OFFICE
                 </h3>
-                <p className="text-[25px] text-black font-light leading-tight" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
+                <p className="text-[18px] xs:text-[22px] sm:text-[25px] text-black font-light leading-tight" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
                   123 Innovation Street
                   <br />
                   San Francisco, CA 94105
@@ -205,10 +205,10 @@ const LeadForm = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <h3 className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                <h3 className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-2 sm:mb-4">
                   RESPONSE TIME
                 </h3>
-                <p className="text-[25px] text-black font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
+                <p className="text-[18px] xs:text-[22px] sm:text-[25px] text-black font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
                   Within 24 hours
                 </p>
               </motion.div>
@@ -217,7 +217,7 @@ const LeadForm = () => {
 
           {/* Right Side - Form */}
           <motion.div 
-            className="w-1/2"
+            className="w-full lg:w-1/2"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -232,13 +232,13 @@ const LeadForm = () => {
                   exit={{ opacity: 0, scale: 0.95 }}
                   className="border-l-2 border-green-500 pl-8 py-16"
                 >
-                  <h3 className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                  <h3 className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider mb-2 sm:mb-4">
                     SUCCESS
                   </h3>
-                  <h2 className="font-bold text-black text-[40px] leading-tight mb-6" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
+                  <h2 className="font-bold text-black text-[24px] xs:text-[32px] sm:text-[40px] leading-tight mb-4 sm:mb-6" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
                     Thank you for reaching out
                   </h2>
-                  <p className="text-[18px] text-gray-600 font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
+                  <p className="text-[14px] xs:text-[16px] sm:text-[18px] text-gray-600 font-light" style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}>
                     We've received your message and will get back to you within 24 hours with a detailed proposal.
                   </p>
                 </motion.div>
@@ -257,7 +257,7 @@ const LeadForm = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                   >
-                    <label className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider block mb-4">
+                    <label className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider block mb-2 sm:mb-4">
                       FULL NAME *
                     </label>
                     <input
@@ -265,7 +265,7 @@ const LeadForm = () => {
                       name="fullName"
                       value={formData.fullName}
                       onChange={handleInputChange}
-                      className="w-full border-b-2 border-gray-200 focus:border-black bg-transparent py-4 text-[20px] text-black outline-none transition-colors duration-300"
+                      className="w-full border-b-2 border-gray-200 focus:border-black bg-transparent py-3 sm:py-4 text-[16px] xs:text-[18px] sm:text-[20px] text-black outline-none transition-colors duration-300"
                       style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}
                       placeholder="Enter your full name"
                     />
@@ -275,7 +275,7 @@ const LeadForm = () => {
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
-                          className="text-red-500 text-[14px] mt-2"
+                          className="text-red-500 text-[12px] xs:text-[14px] mt-2"
                         >
                           {errors.fullName}
                         </motion.p>
@@ -289,7 +289,7 @@ const LeadForm = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                   >
-                    <label className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider block mb-4">
+                    <label className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider block mb-2 sm:mb-4">
                       EMAIL ADDRESS *
                     </label>
                     <input
@@ -297,7 +297,7 @@ const LeadForm = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full border-b-2 border-gray-200 focus:border-black bg-transparent py-4 text-[20px] text-black outline-none transition-colors duration-300"
+                      className="w-full border-b-2 border-gray-200 focus:border-black bg-transparent py-3 sm:py-4 text-[16px] xs:text-[18px] sm:text-[20px] text-black outline-none transition-colors duration-300"
                       style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}
                       placeholder="your.email@example.com"
                     />
@@ -307,7 +307,7 @@ const LeadForm = () => {
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
-                          className="text-red-500 text-[14px] mt-2"
+                          className="text-red-500 text-[12px] xs:text-[14px] mt-2"
                         >
                           {errors.email}
                         </motion.p>
@@ -321,14 +321,14 @@ const LeadForm = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                   >
-                    <label className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider block mb-4">
+                    <label className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider block mb-2 sm:mb-4">
                       SERVICE REQUIRED *
                     </label>
                     <select
                       name="service"
                       value={formData.service}
                       onChange={handleInputChange}
-                      className="w-full border-b-2 border-gray-200 focus:border-black bg-transparent py-4 text-[20px] text-black outline-none transition-colors duration-300 appearance-none cursor-pointer"
+                      className="w-full border-b-2 border-gray-200 focus:border-black bg-transparent py-3 sm:py-4 text-[16px] xs:text-[18px] sm:text-[20px] text-black outline-none transition-colors duration-300 appearance-none cursor-pointer"
                       style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}
                     >
                       <option value="">Select a service</option>
@@ -344,7 +344,7 @@ const LeadForm = () => {
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
-                          className="text-red-500 text-[14px] mt-2"
+                          className="text-red-500 text-[12px] xs:text-[14px] mt-2"
                         >
                           {errors.service}
                         </motion.p>
@@ -358,7 +358,7 @@ const LeadForm = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                   >
-                    <label className="text-[15px] font-semibold text-gray-400 uppercase tracking-wider block mb-4">
+                    <label className="text-[13px] sm:text-[15px] font-semibold text-gray-400 uppercase tracking-wider block mb-2 sm:mb-4">
                       PROJECT DESCRIPTION *
                     </label>
                     <textarea
@@ -366,7 +366,7 @@ const LeadForm = () => {
                       value={formData.description}
                       onChange={handleInputChange}
                       rows={4}
-                      className="w-full border-b-2 border-gray-200 focus:border-black bg-transparent py-4 text-[20px] text-black outline-none transition-colors duration-300 resize-none"
+                      className="w-full border-b-2 border-gray-200 focus:border-black bg-transparent py-3 sm:py-4 text-[16px] xs:text-[18px] sm:text-[20px] text-black outline-none transition-colors duration-300 resize-none"
                       style={{ fontFamily: 'Space Grotesk, Arial, sans-serif' }}
                       placeholder="Tell us about your project, goals, timeline, and requirements"
                     />
@@ -377,7 +377,7 @@ const LeadForm = () => {
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
-                            className="text-red-500 text-[14px]"
+                          className="text-red-500 text-[12px] xs:text-[14px]"
                           >
                             {errors.description}
                           </motion.p>
@@ -385,7 +385,7 @@ const LeadForm = () => {
                           <div></div>
                         )}
                       </AnimatePresence>
-                      <span className="text-[12px] text-gray-400">
+                      <span className="text-[10px] xs:text-[12px] text-gray-400">
                         {formData.description.length}/500
                       </span>
                     </div>
@@ -396,12 +396,12 @@ const LeadForm = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.5 }}
-                    className="pt-8"
+                    className="pt-4 sm:pt-8"
                   >
                     <motion.button
                       type="submit"
                       disabled={isSubmitting || Object.keys(errors).length > 0}
-                      className={`w-full border-2 py-6 text-[18px] font-semibold uppercase tracking-wider transition-all duration-300 ${
+                      className={`w-full border-2 py-4 sm:py-6 text-[14px] xs:text-[16px] sm:text-[18px] font-semibold uppercase tracking-wider transition-all duration-300 ${
                         isSubmitting || Object.keys(errors).length > 0
                           ? 'border-gray-300 text-gray-400 cursor-not-allowed'
                           : 'border-black text-black hover:bg-black hover:text-white'
