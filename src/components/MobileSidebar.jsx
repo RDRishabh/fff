@@ -49,8 +49,6 @@ const MobileSidebar = ({ isOpen, onClose }) => {
             )}
             <a href="#" className="mt-2">Cases</a>
             <a href="#">Company</a>
-            <a href="#">Career</a>
-            <a href="#">Insights</a>
             <a href="#">Contacts</a>
           </nav>
         </div>
