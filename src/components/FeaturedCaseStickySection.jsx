@@ -34,16 +34,16 @@ const FeaturedCaseStickySection = () => {
   // For advanced sticky logic, you can use refs and IntersectionObserver if needed
   return (
     <section className="bg-white py-20">
-      <div className=" ">
+      <div className="relative">
         {cases.map((c, idx) => (
           <div
             key={idx}
-            className="bg-white px-12 py-12 sticky top-12 flex flex-row gap-12 mb-24 border-t border-gray-200"
-            style={{ minHeight: "500px" }}
+            className={`bg-white top-4 sm:top-8 md:top-12 lg:top-16 xl:top-24 px-12 py-12 flex flex-row gap-12 mb-24 border-t border-gray-200 transition-all duration-300 ${idx !== 0 ? "mt-48 z-20" : "z-10"}`}
+            style={{ minHeight: "500px", position: "sticky" }}
           >
             {/* Left image sticky */}
             <div
-              className="w-1/2 sticky top-24 h-[500px] flex items-center justify-center"
+              className="w-1/2 sticky top-16 h-[80vh] flex items-center justify-center"
               style={{ zIndex: 10 }}
             >
               <img

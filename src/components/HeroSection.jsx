@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection = () => {
   return (
     
-    <section className="bg-black text-white min-h-screen">
+    <section className="bg-black text-white min-h-screen pt-20">
       <div className="w-full px-16 py-16">
         {/* Header Caption */}
         <div className="mb-6 mt-12">
