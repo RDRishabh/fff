@@ -104,7 +104,7 @@ const StickySplitSection = () => {
     <section className="bg-black pt-10 sm:pt-20">
       <div className="flex flex-col lg:flex-row gap-0 px-4 sm:px-8">
         {/* Left sticky nav */}
-        <div className="w-full lg:w-1/4 pr-0 sm:pr-8 flex flex-row lg:flex-col items-start sticky top-8 sm:top-12 h-fit lg:h-screen min-h-[120px] lg:min-h-screen mb-8 lg:mb-0">
+        <div className="w-full lg:w-1/4 hidden pr-0 sm:pr-8 md:flex flex-row lg:flex-col items-start sticky top-8 sm:top-12 h-fit lg:h-screen min-h-[120px] lg:min-h-screen mb-8 lg:mb-0">
           <div className="mb-6 sm:mb-12 mt-2 w-full flex flex-row lg:flex-col gap-2 lg:gap-0">
             {stages.map((stage, idx) => (
               <button
